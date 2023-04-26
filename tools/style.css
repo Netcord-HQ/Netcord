@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif
+}
+
+:root {
+    --color-theme: #FF4E61;
+    ;
+    --color-green: #57F287;
+    --color-yellow: #FEE75C;
+    --color-fuchsia: #EB459E;
+    --color-red: #ED4245;
+    --color-white: #fff;
+    --color-bg: #1C1B29;
+    ;
+    --color-gray: #bfc1c3;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    color: var(--color-white);
+}

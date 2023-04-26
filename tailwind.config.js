@@ -6,6 +6,7 @@ module.exports = {
       themecolor: '#FF4E61',
       accentcolor: '#1C1B29',
       trigcolor: "#f8fafc",
+      
     },
 
     screens: {
@@ -37,5 +38,8 @@ module.exports = {
   plugins: [
     require('flowbite/plugin')
   ],
+
+ 
+
 }
 
