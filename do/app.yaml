@@ -1,8 +1,0 @@
-name: Netcord
-static_sites:
-- environment_slug: html
-  github:
-    branch: main
-    deploy_on_push: true
-    repo: Netcord-HQ/Netcord
-  name: Netcord
