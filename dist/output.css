@@ -866,9 +866,9 @@ input[type="range"]::-ms-fill-lower {
   width: 100%;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .container {
-    max-width: 320px;
+    max-width: 480px;
   }
 }
 
@@ -1341,7 +1341,7 @@ input[type="range"]::-ms-fill-lower {
 }
 
 .max-w-screen-sm {
-  max-width: 320px;
+  max-width: 480px;
 }
 
 .max-w-screen-xl {
@@ -2317,7 +2317,7 @@ input[type="range"]::-ms-fill-lower {
   --tw-ring-color: rgb(255 78 97 / var(--tw-ring-opacity));
 }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
