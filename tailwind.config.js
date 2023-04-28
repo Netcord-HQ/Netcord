@@ -11,7 +11,7 @@ module.exports = {
 
     screens: {
 
-      'sm': '320px',
+      'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',
@@ -31,6 +31,10 @@ module.exports = {
     extend: {
       colors: {
         white: "#FFFFFF",
+      },
+
+      fontFamily: {
+        'Lexend': ['Lexend', 'sans-serif']
       }
     },
   },
