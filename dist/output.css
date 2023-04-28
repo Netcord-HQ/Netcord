@@ -866,9 +866,9 @@ input[type="range"]::-ms-fill-lower {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 320px) {
   .container {
-    max-width: 640px;
+    max-width: 320px;
   }
 }
 
@@ -1341,7 +1341,7 @@ input[type="range"]::-ms-fill-lower {
 }
 
 .max-w-screen-sm {
-  max-width: 640px;
+  max-width: 320px;
 }
 
 .max-w-screen-xl {
@@ -1356,20 +1356,9 @@ input[type="range"]::-ms-fill-lower {
   flex: 1 1 auto;
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce {
-  animation: bounce 1s infinite;
+.translate-x-3 {
+  --tw-translate-x: 0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-1 {
@@ -1561,6 +1550,10 @@ input[type="range"]::-ms-fill-lower {
   border-color: rgb(255 78 97 / var(--tw-border-opacity));
 }
 
+.bg-\[\#fffffff5\] {
+  background-color: #fffffff5;
+}
+
 .bg-accentcolor {
   --tw-bg-opacity: 1;
   background-color: rgb(28 27 41 / var(--tw-bg-opacity));
@@ -1608,26 +1601,6 @@ input[type="range"]::-ms-fill-lower {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#ffffffe0\] {
-  background-color: #ffffffe0;
-}
-
-.bg-\[\#fffffff5\] {
-  background-color: #fffffff5;
-}
-
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
-}
-
-.bg-opacity-75 {
-  --tw-bg-opacity: 0.75;
-}
-
-.bg-opacity-80 {
-  --tw-bg-opacity: 0.8;
 }
 
 .bg-none {
@@ -2174,11 +2147,6 @@ input[type="range"]::-ms-fill-lower {
   border-color: rgb(255 78 97 / var(--tw-border-opacity));
 }
 
-.focus\:text-themecolor:focus {
-  --tw-text-opacity: 1;
-  color: rgb(255 78 97 / var(--tw-text-opacity));
-}
-
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2349,7 +2317,7 @@ input[type="range"]::-ms-fill-lower {
   --tw-ring-color: rgb(255 78 97 / var(--tw-ring-opacity));
 }
 
-@media (min-width: 640px) {
+@media (min-width: 320px) {
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
