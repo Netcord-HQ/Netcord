@@ -1,0 +1,15 @@
+<svg width="471" height="557" viewBox="0 0 471 557" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="471" height="557" rx="35" fill="#1C1B29"/>
+<rect width="471" height="557" rx="35" fill="#1C1B29"/>
+<circle cx="45.5" cy="48.5" r="13.5" fill="#E2757D"/>
+<rect x="224" y="39" width="64" height="23" rx="11.5" fill="#44415A"/>
+<rect x="235" y="327" width="175" height="23" rx="11.5" fill="#2A2740"/>
+<rect x="263" y="355" width="147" height="23" rx="11.5" fill="#2A2740"/>
+<rect width="175" height="23" rx="11.5" transform="matrix(-1 0 0 1 236 473)" fill="#2A2740"/>
+<rect width="147" height="23" rx="11.5" transform="matrix(-1 0 0 1 208 501)" fill="#2A2740"/>
+<rect x="297" y="39" width="64" height="23" rx="11.5" fill="#2A2740"/>
+<rect x="370" y="39" width="64" height="23" rx="11.5" fill="#2A2740"/>
+<rect x="32" y="90" width="402" height="175" rx="11" fill="#2A2740"/>
+<rect x="61" y="288" width="130" height="130" rx="11" fill="#E2757D"/>
+<path d="M280 468C280 457.629 280 452.444 283.222 449.222C286.444 446 291.629 446 302 446H388C398.371 446 403.556 446 406.778 449.222C410 452.444 410 457.629 410 468V552H280V468Z" fill="#E2757D"/>
+</svg>
