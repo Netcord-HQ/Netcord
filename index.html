@@ -11,6 +11,27 @@
 
           gtag('config', 'G-QLNCP5NRKD');
         </script>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+      <script>
+        function SubForm (){
+          $.ajax({
+            url:"https://api.apispreadsheets.com/data/gzX8gUNobPqedADD/",
+            type:"post",
+            data:$("#myForm").serializeArray(),
+            success: function(){
+              var successMessage = "Email Received Successfully! Get back to you soon!";
+              $("#myForm").append('<p class="text-success">' + successMessage + '</p>');
+    },
+            error: function(){
+              alert("There was an error, this might be becouse of your internet connection, or there is a problem with the server. Please try again. If this issue persists, join our discord server for support")
+            }
+          });
+        }
+      </script>
+
 
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
@@ -31,7 +52,9 @@
     <meta property="og:title" content="Netcord Agency" />
     <meta property="og:description" content="Netcord is a creative agency that specializes in Discord server development services for brands, creators, and projects. We provide expert solutions to help you build and optimize your Discord presence." />
     <meta property="og:image" content="https://media.discordapp.net/attachments/987744232007692323/1100807074226655393/YouTube_Thumbnail.png" />
- 
+    
+
+
 </head>
 
 
@@ -611,7 +634,7 @@ to Discord, bring it online with our professional Web Design and Development ski
                 href="https://blog.netcord.in/military-files-leaker-arrested-by-fbi" target="_blank"
                 class="text-dark hover:text-themecolor mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
               >
-              FBI Arrests Jack Teixeira for Military Secrets Leaked in Discord
+              FBI Arrests Jack Teixeira for Military Secrets Leaked...
               </a>
             </h3>
             <p class="text-gray-600 text-base">
@@ -762,14 +785,15 @@ to Discord, bring it online with our professional Web Design and Development ski
             <a class="hover:opacity-75" href="tools.html">Discord Tools</a>
           </nav>
         </div>
-          <div class="grid w-80 grid-rows-4 gap-1">
-            <p class="font-semibold text-gray-700">Signup for our upcoming Newsletter</p>
-            
-               <input type="email" class=" h-10 w-full rounded border-1 p-2 text-sm focus:ring-themecolor focus:border-themecolor" placeholder="Your email" />
-               <button onclick="SubForm()" class="rounded bg-themecolor text-white hover:animate-bounce">Give me early access</button>
-            
-          </div>
-      
+        <div class="grid w-80 grid-rows-4 gap-1"> 
+          <p class="font-semibold text-gray-700">Signup for our upcoming Newsletter</p>    
+        <form id="myForm">
+          <input class="h-10 w-full rounded border-1 p-2 text-sm focus:ring-themecolor focus:border-themecolor" type="email" name="email" autocomplete="email" placeholder="Your Email" />
+        </form>
+  
+        <button class="rounded bg-themecolor text-white hover: hover:animate-pulse" onclick='SubForm()'>Give me Early Access</button>
+          
+      </div>
 
       </div>
 
@@ -780,6 +804,9 @@ to Discord, bring it online with our professional Web Design and Development ski
     </p>
   </div>
 </footer>
+
+
+
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -801,36 +828,6 @@ to Discord, bring it online with our professional Web Design and Development ski
       },
     })
   })
-</script>
-  
-<script>
-  var section1 = document.getElementById('section-1');
-  var section2 = document.getElementById('section-2');
-  var sections = [section1, section2];
-
-  function checkSectionVisibility() {
-    sections.forEach(function(section) {
-      if (isElementInViewport(section)) {
-        section.classList.add('opacity-100');
-      }
-    });
-  }
-
-  function isElementInViewport(element) {
-    var rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  window.addEventListener('scroll', function() {
-    checkSectionVisibility();
-  });
-
-  checkSectionVisibility();
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>

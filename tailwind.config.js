@@ -6,6 +6,7 @@ module.exports = {
       themecolor: '#FF4E61',
       accentcolor: '#1C1B29',
       trigcolor: "#f8fafc",
+      hovercolor: "#fc8693",
       
     },
 
