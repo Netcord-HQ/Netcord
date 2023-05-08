@@ -121,238 +121,74 @@
             </button>
 
 <!-- Main modal -->
-<div id="authentication-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative w-full max-w-md max-h-full">
+<div id="authentication-modal" tabindex="-1" aria-hidden="true" class=" bg-accentcolor bg-opacity-50 w-full h-full fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 max-h-full">
+    <div class="relative mt-8 w-5/12 max-w-full max-h-full" >
         <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <div class="relative w-full bg-white rounded-lg shadow-lg dark:bg-gray-700">
             <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="authentication-modal">
                 <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 <span class="sr-only">Close modal</span>
             </button>
             <div class="px-6 py-6 lg:px-8">
-                <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h3>
-                <form class="space-y-6" action="#">
-                    <div>
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required>
+              <h2 class="mb-4 text-3xl font-medium text-gray-900 dark:text-white">Get a Quote</h2>
+                <hr>
+                
+              <form id="myForm" class="mx-auto mt-16 max-w-xl sm:mt-20">
+                <div class="-mt-5 grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                  <div>
+                    <label for="First Name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+                    <div class="mt-2.5">
+                      <input type="text" name="First Name" id="First Name" autocomplete="given-name" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm sm:leading-6">
                     </div>
-                    <div>
-                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
-                        <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                  </div>
+                  <div>
+                    <label for="Last Name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+                    <div class="mt-2.5">
+                      <input type="text" name="Last Name" id="Last Name" required autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm sm:leading-6">
                     </div>
-                    <div class="flex justify-between">
-                        <div class="flex items-start">
-                            <div class="flex items-center h-5">
-                                <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
-                            </div>
-                            <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
-                        </div>
-                        <a href="#" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company Name/Project Name</label>
+                    <div class="mt-2.5">
+                      <input type="text" name="company" id="company" required autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm sm:leading-6">
                     </div>
-                    <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login to your account</button>
-                    <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
-                        Not registered? <a href="#" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+                    <div class="mt-2.5">
+                      <input type="email" name="email" id="email" required autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm sm:leading-6">
                     </div>
-                </form>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label for="" class="block text-sm font-semibold leading-6 text-gray-900">Budget</label>
+                    <div class="mt-2.5">
+                      <input type="text" name="C-Number" id="C-Number" required placeholder="$" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label for="Message" class="block text-sm font-semibold leading-6 text-gray-900">Project Description</label>
+                    <div class="mt-2.5">
+                      <textarea name="Message" id="Message" rows="4" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm sm:leading-6"></textarea>
+                    </div>
+                  </div>
+                
+                </div> 
+                
+              </form>
+              <div class="mx-auto mt-16 max-w-xl sm:mt-20">
+                <div class="-mt-5 grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-1">
+              
+                <button onclick='SubForm()' class="block w-full rounded-md bg-themecolor px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-themecolor">Submit</button>
+              
+            </div>
+            </div>
+
             </div>
         </div>
     </div>
 </div> 
 
 
-            <div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-              <div class="relative w-full max-w-2xl max-h-full">
-                  <!-- Modal content -->
-                  <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                      <!-- Modal header -->
-                      <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-  
-                        <div class="mx-auto max-w-2xl text-center">
-                          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl ">Contact Team</h2>
-                          <p class="mt-2 text-lg leading-8 text-gray-600">Want to report a bug? Want more information about services/pricing? Let the team know about it and we will get back to you as soon as possible!</p>
-                        </div>
-                        <form id="myForm" class="mx-auto mt-16 max-w-xl sm:mt-20">
-                          <div class="-mt-5 grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                            <div>
-                              <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
-                              <div class="mt-2.5">
-                                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm sm:leading-6">
-                              </div>
-                            </div>
-                            <div>
-                              <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
-                              <div class="mt-2.5">
-                                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm sm:leading-6">
-                              </div>
-                            </div>
-                            <div class="sm:col-span-2">
-                              <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
-                              <div class="mt-2.5">
-                                <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm sm:leading-6">
-                              </div>
-                            </div>
-                            <div class="sm:col-span-2">
-                              <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
-                              <div class="mt-2.5">
-                                <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm sm:leading-6">
-                              </div>
-                            </div>
-                            <div class="sm:col-span-2">
-                              <label for="C-Number" class="block text-sm font-semibold leading-6 text-gray-900">C-Number</label>
-                              <div class="relative mt-2.5">
-                                <div class="absolute inset-y-0 left-0 flex items-center">
-                                  <label for="country" class="sr-only">Country</label>
-                                  <select id="country" name="country" class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm">
-                                    <option>AF</option>
-                      <option>AL</option>
-                      <option>DZ</option>
-                      <option>AD</option>
-                      <option>AO</option>
-                      <option>AI</option>
-                      <option>AG</option>
-                      <option>AR</option>
-                      <option>AM</option>
-                      <option>AU</option>
-                      <option>AT</option>
-                      <option>AZ</option>
-                      <option>BS</option>
-                      <option>BH</option>
-                      <option>BD</option>
-                      <option>BB</option>
-                      <option>BY</option>
-                      <option>BE</option>
-                      <option>BZ</option>
-                      <option>BJ</option>
-                      <option>BM</option>
-                      <option>BT</option>
-                      <option>BO</option>
-                      <option>BA</option>
-                      <option>BW</option>
-                      <option>BR</option>
-                      <option>BN</option>
-                      <option>BG</option>
-                      <option>BF</option>
-                      <option>BI</option>
-                      <option>KH</option>
-                      <option>CM</option>
-                      <option>CA</option>
-                      <option>CV</option>
-                      <option>KY</option>
-                      <option>CF</option>
-                      <option>TD</option>
-                      <option>CL</option>
-                      <option>CN</option>
-                      <option>CO</option>
-                      <option>KM</option>
-                      <option>CG</option>
-                      <option>CD</option>
-                      <option>CR</option>
-                      <option>CI</option>
-                      <option>HR</option>
-                      <option>CU</option>
-                      <option>CY</option>
-                      <option>CZ</option>
-                      <option>DK</option>
-                      <option>DJ</option>
-                      <option>DM</option>
-                      <option>DO</option>
-                      <option>EC</option>
-                      <option>EG</option>
-                      <option>SV</option>
-                      <option>GQ</option>
-                      <option>ER</option>
-                      <option>EE</option>
-                      <option>ET</option>
-                      <option>FJ</option>
-                      <option>FI</option>
-                      <option>FR</option>
-                      <option>GA</option>
-                      <option>GM</option>
-                      <option>GE</option>
-                      <option>DE</option>
-                      <option>GH</option>
-                      <option>GR</option>
-                      <option>GD</option>
-                      <option>GT</option>
-                      <option>GN</option>
-                      <option>GW</option>
-                      <option>GY</option>
-                      <option>HT</option>
-                      <option>HN</option>
-                      <option>HK</option>
-                      <option>HU</option>
-                      <option>IS</option>
-                      <option>IN</option>
-                      <option>ID</option>
-                      <option>IR</option>
-                      <option>IQ</option>
-                      <option>IE</option>
-                      <option>IL</option>
-                      <option>IT</option>
-                      <option>JM</option>
-                      <option>JP</option>
-                      <option>JO</option>
-                      <option>KZ</option>
-                      <option>KE</option>
-                      <option>KI</option>
-                      <option>KR</option>
-                      <option>KW</option>
-                      <option>KG</option>
-                      <option>LA</option>
-                      <option>LV</option>
-                      <option>LB</option>
-                      <option>LS</option>
-                      <option>LR</option>
-                      <option>LY</option>
-                      <option>LI</option>
-                      <option>LT</option>
-                      <option>LU</option>
-                      <option>MO</option>
-                      <option>MK</option>
-                      <option>MG</option>
-                      <option>MW</option>
-                      <option>MY</option>
-                      <option>MV</option>
-                      <option>ML</option>
-                      <option>MT</option>
-                      <option>MH</option>
-                      <option>MR</option>
-                      <option>MU</option>
-                      <option>MX</option>
-                      <option>FM</option>
-                      <option>MD</option>
-                      <option>MC</option>
-                      <option>MN</option>
-                      <option>ME</option>
-                      <option>MA</option>
-                      <option>MZ</option>
-                      <option>MM</option>
-                      <option>NA</option>
-                      
-                                  </select>
-                                  
-                                </div>
-                                <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm sm:leading-6">
-                              </div>
-                            </div>
-                            <div class="sm:col-span-2">
-                              <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
-                              <div class="mt-2.5">
-                                <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-themecolor sm:text-sm sm:leading-6"></textarea>
-                              </div>
-                            </div>
-                            
-                          </div>
-                          <div class="mt-10">
-                            <button onclick='SubForm()' class="block w-full rounded-md bg-themecolor px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-themecolor">Submit</button>
-                          </div>
-                        </form>
-                      </div>
-                      <!-- Modal footer -->
-                      
-                  </div>
-              </div>
-          </div>
           
 
 
