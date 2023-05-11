@@ -161,6 +161,7 @@ input[type="color"]::-webkit-color-swatch {
 .toggle-switch:before,
 .toggle-switch:after {
     content: "";
+    background: #FF4E61;
 }
 
 .toggle-switch:before {
