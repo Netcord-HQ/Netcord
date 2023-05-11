@@ -35,6 +35,7 @@
 
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
+    <link href="/dist/scrollbar.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="/svgs/Netcord_Agency_Rounded.png" />
     <title>Netcord Agency</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,9 +66,10 @@
 
 <body class="font-Lexend">
 
+   
   <nav class="bg-[#fffffff5] dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://netcord.in" class="flex items-center">
+    <a href="/" class="flex items-center">
         <img src="/svgs/logo.svg" class="h-10 mr-3" alt="Netcord Logo">
         
     </a>
@@ -81,7 +83,7 @@
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="#1" class="block py-2 pl-3 pr-4 text-themecolor rounded md:hover:bg-transparent md:text-themecolor md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+          <a href="/" class="block py-2 pl-3 pr-4 text-themecolor rounded md:hover:bg-transparent md:text-themecolor md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
         </li>
         <li>
           <a href="about.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
@@ -220,7 +222,7 @@
     	class="relative h-0 overflow-hidden max-w-full w-full rounded-xl" 
 		style="padding-bottom: 56.25%"
  	>
-		<img class="sm:hidden md:block" src="/svgs/Group 78.svg">
+		<img class="sm:hidden sl:block md:block" src="/svgs/Group 78.svg">
     
 	</div>
         
@@ -237,7 +239,7 @@
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="max-w-screen-lg text-gray-500 sm:text-sm dark:text-gray-400">
         <blockquote class=" border-0-4 border-themecolor text-6xl ml-20">
-          <h2 class="md:block sm:hidden mb-4 ml-6 text-5xl font-semibold text-gray-900 dark:text-white leading-tight"> As the world moves more towards a <br> <span class="text-themecolor"> Digital Landscape</span>, having an online appearance continues to become
+          <h2 class="md:block sl:hidden mb-4 ml-6 text-5xl font-semibold text-gray-900 dark:text-white leading-tight"> As the world moves more towards a <br> <span class="text-themecolor"> Digital Landscape</span>, having an online appearance continues to become
             <br> essential for any business.
           </h2>
         </blockquote>
@@ -246,6 +248,19 @@
 </section>
 </div>
 
+<div class="bg-white py-20 sm:py-32 -mt-10">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor" width="158" height="48">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158" height="48">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48">
+      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158" height="48">
+      <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48">
+    </div>
+  </div>
+</div>
+
+<!------
 <section>
 <div class="bg-white sm:py-32 -mt-11 mr-20">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -260,7 +275,7 @@
   </div>
 </div>
 </section>
-
+!-->
 
   <section class="relative pt-16 bg-blueGray-50 bg-accentcolor">
     <div class="container mx-auto">
@@ -334,7 +349,7 @@ to Discord, bring it online with our professional Web Design and Development ski
         </div>
         <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
           <div class="relative flex flex-col min-w-0 break-word w-full mb-6 rounded-lg">
-            <img alt="..." src="/svgs/red.png" class="w-full align-middle my-3 translate-x-3 sm:hidden md:block">
+            <img alt="..." src="/svgs/red.png" class="w-full sl:hidden align-middle my-3 translate-x-3 sm:hidden md:block">
             
           </div>
         </div>
@@ -343,18 +358,19 @@ to Discord, bring it online with our professional Web Design and Development ski
     </section>
 
 
-  <section class="bg-white dark:bg-gray-900">
-    <div class="container px-6 py-10 mx-auto w-auto">
+  <section class="bg-white dark:bg-gray-900 ">
+    <div class="container px-6 py-10 mx-auto w-auto ml-14">
         <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
            
-          <img class=" md:h-auto ml-36 mt-6 md: display-none mb-4" src="/svgs/Group 91.svg" alt="image description">
+          <img class="md:h-auto ml-36 mt-6 md: display-none mb-4 sl:ml-3 " src="/svgs/Group 91.svg" alt="image description">
 
 
             <div class="mt-9 lg:w-1/2 lg:mt-0 lg:mx-6 ">
 
-                <h2 href="#" class=" block ml-5 text-2xl font-semibold text-gray-800 dark:text-white md:text-5xl mb-7">
-                  We build <span class="text-themecolor">experiences</span>, </br> not just Discord Servers
+                <h2 href="#" class=" block ml-4 text-2xl font-semibold text-gray-800 dark:text-white md:text-5xl mb-7">
+                  <nobr>We build <span class="text-themecolor">experiences</span></nobr>, </br> not just Discord Servers
                 </h2>
+
 
                 
 <!-- component -->
@@ -428,7 +444,7 @@ to Discord, bring it online with our professional Web Design and Development ski
   
 </div>
 
-<a href="contact.html" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-themecolor duration-300  sm:w-full md:w-auto inline-flex items-center justify-center w-full px-6 py-3 mb-2 ml-4 text-lg text-white bg-themecolor rounded-2xl md:mb-0 sm:mb-28">
+<a href="contact.html" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-themecolor duration-300  sm:w-full md:w-auto inline-flex items-center justify-center w-full px-6 py-3 mb-20 ml-4 text-lg text-white bg-themecolor rounded-2xl md:mb-0 sm:mb-28">
   Let's Talk
   <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 </a>
