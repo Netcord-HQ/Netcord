@@ -7,7 +7,7 @@ module.exports = {
       accentcolor: '#1C1B29',
       trigcolor: "#f8fafc",
       hovercolor: "#fc8693",
-      
+      greytheme: "#C9C9C9",
     },
 
     screens: {
