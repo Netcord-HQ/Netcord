@@ -1211,26 +1211,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-top: 2.25rem;
 }
 
-.-ml-2 {
-  margin-left: -0.5rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
-}
-
-.-mt-3 {
-  margin-top: -0.75rem;
-}
-
-.-mt-4 {
-  margin-top: -1rem;
-}
-
 .block {
   display: block;
 }
@@ -1301,18 +1281,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .max-h-full {
   max-height: 100%;
-}
-
-.max-h-20 {
-  max-height: 5rem;
-}
-
-.max-h-28 {
-  max-height: 7rem;
-}
-
-.max-h-16 {
-  max-height: 4rem;
 }
 
 .w-10 {
@@ -2295,21 +2263,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   --tw-ring-color: rgb(255 78 97 / var(--tw-ring-opacity));
 }
 
-.focus\:ring-trans:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(251 113 133 / var(--tw-ring-opacity));
-}
-
-.focus\:ring-greytheme:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(201 201 201 / var(--tw-ring-opacity));
-}
-
-.focus\:ring-\[\#000000\]:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity));
-}
-
 .focus-visible\:outline:focus-visible {
   outline-style: solid;
 }
@@ -2454,14 +2407,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     margin-left: 0.75rem;
   }
 
-  .sl\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
-  .sl\:ml-1 {
-    margin-left: 0.25rem;
-  }
-
   .sl\:block {
     display: block;
   }
@@ -2486,10 +2431,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
   .sm\:-ml-20 {
     margin-left: -5rem;
-  }
-
-  .sm\:-mt-11 {
-    margin-top: -2.75rem;
   }
 
   .sm\:-mt-12 {
@@ -2678,10 +2619,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:ml-1 {
-    margin-left: 0.25rem;
   }
 
   .md\:block {

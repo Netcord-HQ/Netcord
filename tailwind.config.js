@@ -6,10 +6,14 @@ module.exports = {
       themecolor: '#FF4E61',
       accentcolor: '#1C1B29',
       trigcolor: "#f8fafc",
-      hovercolor: "#fc8693",
       greytheme: "#C9C9C9",
+      trans: '#fb7185'
     },
 
+    content: {
+      transform: (content) => content.replace(/taos:/g, ''),
+    },
+   
     screens: {
       'sl': '320px',
 
@@ -42,10 +46,17 @@ module.exports = {
   },
   
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('taos/plugin')
+    
+
   ],
 
- 
+  safelist: [
+    '!duration-[0ms]',
+    '!delay-[0ms]',
+    'html.js :where([class*="taos:"]:not(.taos-init))'
+  ]
 
 }
 
