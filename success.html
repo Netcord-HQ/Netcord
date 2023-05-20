@@ -103,12 +103,14 @@
 
     
 
-    <footer class="md:bottom-0 md:w-full md:absolute  ">
+
+
+      <footer class="md:bottom-0 md:w-full md:absolute">
         <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            <div class="mb-5">
-            <img src="/svgs/logo.svg" class="h-12 sm:h-20 -ml-3 " alt="logo" />
-              <div class="ml-1 flex mt-2 space-x-6 text-gray-600">
+            <div class="-mt-6">
+            <img src="/svgs/logo.svg" class="w-40 h-40 sm:h-20 -ml-3 " alt="logo" />
+              <div class="ml-1 flex sl:-mt-10 sm:-mt-0 md:-mt-0 space-x-6 text-gray-600">
                 <a class="hover:opacity-75" href="https://discord.gg/BYGpY8U6vx" target="_blank" rel="noreferrer">
                   <span class="sr-only"> Discord </span>
                   <svg class="w-6 h-6 mb-3" width="27" height="27" viewBox="0 0 40 31" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -142,9 +144,9 @@
                   Company
                 </p>
                 <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                  <a class="hover:opacity-75" href="about">About</a>
-                  <a class="hover:opacity-75" href="services#1">Services</a>
-                  <a class="hover:opacity-75" href="about">Careers</a>
+                  <a class="hover:opacity-75" href="/about">About</a>
+                  <a class="hover:opacity-75" href="/services">Services</a>
+                  <a class="hover:opacity-75" href="/careers">Careers</a>
                 </nav>
               </div>
               <div>
@@ -152,29 +154,29 @@
                   Resources
                 </p>
                 <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                  <a class="hover:opacity-75" href="about#faqs">FAQs</a>
+                  <a class="hover:opacity-75" href="/about#faqs">FAQs</a>
                   <a class="hover:opacity-75" href="https://blog.netcord.in/">Blog</a>
-                  <a class="hover:opacity-75" href="tools">Discord Tools</a>
+                  <a class="hover:opacity-75" href="/tools">Discord Tools</a>
                 </nav>
               </div>
-                <div class="grid w-80 grid-rows-4 gap-1">
-                  <p class="font-semibold text-gray-700">Signup for our upcoming Newsletter</p>
-                  
-                     <input type="email" class=" h-10 w-full rounded border-1 p-2 text-sm focus:ring-themecolor focus:border-themecolor" placeholder="Your email" />
-                     <button onclick="SubForm()" class="rounded bg-themecolor text-white hover: hover:animate-pulse">Give me early access</button>
-                  
-                </div>
-            
-      
+              <div class="grid w-80 grid-rows-4 gap-1"> 
+                <p class="font-semibold text-gray-700">Signup for our upcoming Newsletter</p>    
+              <form id="myForm">
+                <input class="h-10 w-full rounded border-1 p-2 text-sm focus:ring-themecolor focus:border-themecolor" type="email" name="email" autocomplete="email" placeholder="Your Email" />
+              </form>
+        
+              <button class="rounded bg-themecolor text-white hover: hover:animate-pulse" onclick='SubForm()'>Give me Early Access</button>
+                
             </div>
+            
+          </div>
       
             
           </div>
-          <p class="-mt-9 text-xs text-gray-800">
+          <p class="lg:-mt-16 md:-mt-0 sm:-mt-0 text-xs text-gray-800 sm:mt-0 ">
             © 2023 Netcord Agency.
           </p>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
       </footer>
       
 </body>

@@ -1,0 +1,41 @@
+.servicehead {
+    position: absolute;
+width: 1083px;
+height: 98px;
+left: 179px;
+top: 202px;
+
+font-family: 'Lexend';
+font-style: normal;
+font-weight: 600;
+font-size: 78px;
+line-height: 98px;
+/* identical to box height */
+
+text-align: center;
+margin-left: 13rem;
+margin-bottom: 10rem;
+
+color: #1C1B29;
+
+
+}
+
+.description {
+position: absolute;
+width: 550px;
+height: 48px;
+left: 680px;
+top: 330px;
+
+font-family: 'Lexend';
+font-style: normal;
+font-weight: 200;
+font-size: 30px;
+line-height: 48px;
+/* identical to box height */
+
+
+color: #1C1B29;
+
+}

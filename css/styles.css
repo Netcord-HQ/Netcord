@@ -1,0 +1,453 @@
+body{
+    margin: 0;
+    background-color:#21212200
+    
+    
+
+}
+
+.s1 {
+    background-color: #292c30;
+
+    
+    
+    
+
+}
+    
+.navbar {
+        float: right;
+        list-style-type: none;
+        margin-right: 23rem;
+        margin-top: -10.5rem;
+        padding: 52px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        font-family: 'Lexend', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+  
+    }
+
+    .navbar li {
+        float: left;
+         
+    }
+
+    .navbar li a {
+        display: block;
+        color:#A0A0A0;
+        
+        text-align: center;
+        padding: 6px 7px;
+        text-decoration: none;
+        padding: 0px 25px;
+        
+        
+    }
+
+    .navbar li a:hover {
+        color: #252424c9;
+          
+    }
+
+/* identical to box height */
+
+
+
+.logo {
+    position: absolute;
+    width: 150px;
+    height:150px;
+    margin-top: -1rem;
+    left: 158px;
+    pointer-events: none;
+
+}
+
+.Contact {
+    position: absolute;
+    width: 93px;
+    height: 26px;
+    left: 1550px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    padding-left: 2rem;
+    background: #1C1B29;
+    border-radius: 9px;
+    color: #FFFFFF;
+    
+    
+    
+
+
+
+
+
+}
+
+
+
+
+h1 {
+    
+    width: 907px;
+    height: 196px;
+    left: 800px;
+    top: 150px;
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 75px;
+    line-height: 90px;
+    
+    color: #1C1B29;
+    pointer-events: none;
+    margin-left: 24.5rem;
+    margin-top: 10rem;
+    text-align: center;
+    
+
+}
+
+
+
+
+.email ::placeholder{
+    position: absolute;
+width: 263px;
+height: 36px;
+left: 495px;
+top: 793px;
+
+font-family: 'Lexend';
+font-style: normal;
+font-weight: 700;
+font-size: 29px;
+line-height: 36px;
+
+color: #8E8E97;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.myBox {
+    border: none;
+    padding: 5px;
+    font: 24px/36px sans-serif;
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    }
+    
+    /* Scrollbar styles */
+    ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #1C1B29;
+    ;  
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #1C1B29;  
+    }
+
+   
+
+.ex {
+
+width: 650px;
+height: 165px;
+left: 633px;
+top: 89px;
+
+font-family: 'Lexend';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 75px;
+
+color: #FFFFFF;
+
+}
+
+.client {
+    margin-left: 27rem;
+    margin-top: 2rem;
+    pointer-events: none;
+}
+
+.description {
+    
+    position: absolute;
+    width: 1004px;
+    height: 223px;
+    left: 435px;
+    top: 1270px;
+    
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 71px;
+    display: flex;
+    align-items: center;
+    
+    color: #1C1B29;
+
+}
+
+.digital {
+    color: #E23548
+}
+
+
+
+.expert {
+    margin-left: 2px;
+}
+
+.quote {
+    background-color: #f54747;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    
+
+
+}
+
+
+.discord {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    background-image: linear-gradient(90deg,#5539cc,#00c3ff);
+    position: relative;
+    z-index: 1;
+}
+
+.info {
+    font-family: 'Lexend';
+font-style: normal;
+font-weight: 400;
+font-size:23px;
+line-height: 100%;
+color: #5F5F5F;
+text-align: center;
+margin-left: -5rem;
+margin-top: -2.5rem;
+
+
+
+}
+
+.trust {
+    font-family: 'Lexend';
+font-style: normal;
+font-weight: 400;
+font-size:23px;
+line-height: 100%;
+color: #1a1919;
+text-align: center;
+margin-left: -5rem;
+margin-top: 5rem;
+}
+
+
+.LearnMore {
+    width: 93px;
+    height: 26px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    padding-left:9px;
+    padding-right:9px;
+    margin-left: 5px;
+    background: #1C1B29;
+    border-radius: 9px;
+    color: #FFFFFF;
+    
+    
+    
+
+
+
+
+
+}
+
+
+.experts {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    background-image: linear-gradient(90deg,#7928ca,#ff0080);
+    position: relative;
+    z-index: 1;
+}
+
+.disc {
+    
+    background-color: #6747f5;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    margin-left: 46.5rem;
+    margin-top: 15rem;
+   
+    
+}
+
+.disc :hover{
+        background: rgba(0,118,255,0.9);
+        box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+    
+    
+}
+
+.container {
+    border:rgba(0, 0, 0, 0.25)
+}
+
+.header {
+    margin-left: 22rem;
+    margin-top: -6.5rem;
+    
+
+}
+
+
+.w2 {
+    font-family: 'Lexend';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 79.9%;
+/* identical to box height, or 13px */
+
+display: flex;
+align-items: center;
+
+color: #313131;
+}
+
+
+
+.heading {
+    position: absolute;
+width: 485px;
+height: 88px;
+left: 134px;
+top: 1932px;
+
+font-family: 'Lexend';
+font-style: normal;
+font-weight: 400;
+font-size: 44px;
+line-height: 100%;
+/* or 44px */
+
+
+color: #FFFFFF;
+}
+
+.graphic2 {
+    position: absolute;
+width: 646px;
+height: 374.58px;
+left: 1115px;
+top: 1945px;
+
+}
+
+.container1 {
+    background-color: #5F5F5F;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 43.53px;
+    
+    position: absolute;
+    width: 515px;
+    height: 256.57px;
+    left: 134px;
+    top: 2064px;
+
+  }
+ 
