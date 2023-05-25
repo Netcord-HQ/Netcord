@@ -13,12 +13,6 @@ module.exports = {
 
 
    
-
-
-    content: {
-      transform: (content) => content.replace(/taos:/g, ''),
-    },
-   
     screens: {
       'sl': '320px',
 
@@ -51,17 +45,7 @@ module.exports = {
   },
   
   plugins: [
-    require('flowbite/plugin'),
-    require('taos/plugin')
-    
-
+    require('flowbite/plugin')
   ],
-
-  safelist: [
-    '!duration-[0ms]',
-    '!delay-[0ms]',
-    'html.js :where([class*="taos:"]:not(.taos-init))'
-  ]
-
 }
 
