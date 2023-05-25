@@ -22,6 +22,7 @@
     <link href="https://cdn.tailwindcss.com" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
     <link href="/dist/scrollbar.css" rel="stylesheet">
+    <link href="/dist/style.css" rel="stylesheet">
     <meta name="theme-color" content="#FF4E61" />
     <meta  data-react-helment="true" name="og:keywords" content="netcord, Netcord, Agency, agency, discord, Discord, discord server, server, guild, discordapp, blog, article">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +48,7 @@
 <body class="font-Lexend">
 
     
-    <header class="font-Lexend bg-accentcolor">
+    
         <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center">
@@ -89,54 +90,53 @@
             </div>
           </nav>
 
-        <div class="title">
-            <h1 class="font-extrabold text-4xl text-themecolor">Discord Avatar Preview</h1>
-            <p class="text-white">Preview exactly how your avatar/PFP will look on Discord</p>
+          <div class="title">
+            <h1 class="text-5xl font-extrabold">Discord Avatar Preview</h1>
+            <p>Preview exactly how your avatar/PFP will look on Discord</p>
         </div>
 
         <div class="settings">
 
             <div class="row">
-                <label for="file" class="selectImg bg-themecolor">
-                    <span class="text-white">Choose Avatar</span>
+                <label for="file" class="selectImg bg-themecolor text-white">
+                    <span>Choose Avatar</span>
                     <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
                 </label>
     
-                <input class="bg-white" type="text" name="username" id="username" onchange="username()" placeholder="Username">
+                <input type="text" name="username" id="username" onchange="username()" placeholder="Username">
 
                 
             </div>
             
             <div class="row">
-                <label for="roleColor" class="roleColor text-white">
-                    <input type="color" id="roleColor" name="roleColor" value="#FF4E61">
+                <label for="roleColor" class="roleColor">
+                    <input type="color" id="roleColor" name="roleColor" value="#ffffff">
                     <span>Role Color</span>
                 </label>
     
                 <label class="toggle">
-                    <span class="toggle-label text-white">Dark</span>
-                    <input class="toggle-checkbox bg-themecolor" onchange="toggleMode()" type="checkbox">
+                    <span class="toggle-label">Dark</span>
+                    <input class="toggle-checkbox" onchange="toggleMode()" type="checkbox">
                     <div class="toggle-switch"></div>
-                    <span class="toggle-label text-white">Light</span>
+                    <span class="toggle-label">Light</span>
                 </label>
             </div>
             
 
         </div>
 
-    </header>
 
-    <main class="wrapper ">
+    <main class="wrapper bg-themecolor mt-10">
         
 
         <div class="prvContainer">
 
-            <div id="preview" class="prvMessage dark bg-[#313338]">
+            <div id="preview" class="prvMessage dark bg-discord">
 
                 <div class="messages">
                     <div class="avatar"><img src="assets/avatar1.png" /></div>
                     <div class="content">
-                        <h2 class="username text-white" style="color: var(--color-fuchsia)">Emily <span>Today at 4:44</span></h2>
+                        <h2 class="username" style="color: var(--color-fuchsia)">Emily <span>Today at 4:44</span></h2>
                         <div class="message">
                             <p class="messageText">This tool is cool!</p>
                         </div>
@@ -168,14 +168,14 @@
             </div>
 
 
-            <div id="preview2" class="prvRole dark bg-[#313338]">
+            <div id="preview2" class="prvRole dark bg-discord">
 
                 <h1 class="roleName">Members ━ 1,156</h1>
 
                 <div class="user">
                     <div class="avatar"><img id="output2" src="assets/avatar1.png" /></div>
                     <div class="content">
-                        <h2 id="roleColorText2" class="roleColorText">Emily</h2>
+                        <h2 id="roleColorText2" class="roleColorText text-white">Emily</h2>
                         <div class="status">
                             <p class="statusText">Cold hearted ~</p>
                         </div>
@@ -205,11 +205,11 @@
             </div>
 
         </div>
-        
 
     </main>
+        
 
-    <footer class="">
+    <footer class="md:bottom-0 md:w-full md:absolute">
       <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div class="-mt-6">
@@ -282,6 +282,7 @@
         </p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 </body>
 
 </html>

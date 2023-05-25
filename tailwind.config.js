@@ -7,7 +7,8 @@ module.exports = {
       accentcolor: '#1C1B29',
       trigcolor: "#f8fafc",
       greytheme: "#C9C9C9",
-      trans: '#fb7185'
+      trans: '#fb7185',
+      discord: '#2f3136',
     },
 
 
