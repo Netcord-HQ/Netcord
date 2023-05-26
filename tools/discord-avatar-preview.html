@@ -50,8 +50,7 @@
     <script src="htmlredirect.js"></script>
     <title>Tools | Discord Avatar Preview</title>
     <script src="htmlredirect.js"></script>
-    
-    <title>Avatar Preview</title>
+  
 </head>
 
 <body class="font-Lexend">
@@ -72,25 +71,25 @@
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="/" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor 0 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
+          <a href="/" class="font-Lexend block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor 0 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="/about" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          <a href="/about" class="font-Lexend block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
         </li>
         <li>
-          <a href="services" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor md:p-0 md:light:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+          <a href="/services" class="font-Lexend block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor md:p-0 md:light:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
         </li>
          
         <li>
-          <a href="tools" class="block py-2 pl-3 pr-4 text-themecolor rounded hover:bg-gray-100 md:hover:bg-transparent md:text-themecolor md:p-0 md:hover:text-themecolor" aria-current="page">Tools</a>
+          <a href="/tools" class="font-Lexend block py-2 pl-3 pr-4 text-themecolor rounded hover:bg-gray-100 md:hover:bg-transparent md:text-themecolor md:p-0 md:hover:text-themecolor" aria-current="page">Tools</a>
         </li>
         <li>
-          <a href="/blog" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-accentcolor md:p-0 md:hover:text-themecolor" aria-current="page">Blog</a>
+          <a href="/blog" class="font-Lexend block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-accentcolor md:p-0 md:hover:text-themecolor" aria-current="page">Blog</a>
         </li>
 
         <li>
           
-          <a href="contact" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor 0 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+          <a href="/contact" class="font-Lexend block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor 0 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
         </li>
       </ul>
     </div>
@@ -98,22 +97,22 @@
   </nav>
 
 
-    <header>
-
-        <div class="title">
-            <h1 class="text-5xl text-accentcolor font-extrabold mt-20">Discord Avatar Preview</h1>
-            <p class="text-gray-600">Preview exactly how your avatar/PFP will look on Discord</p>
+    
+<header class="font-Lexend">
+        <div class="title sm:mt-0 md:mt-14">
+            <h1 class="font-Lexend text-5xl text-accentcolor font-extrabold mt-20">Discord Avatar Preview</h1>
+            <p class="font-Lexend text-gray-600">Preview exactly how your avatar/PFP will look on Discord</p>
         </div>
 
-        <div class="settings">
+        <div class="settings font-Lexend">
 
             <div class="row">
                 <label for="file" class="selectImg">
-                    <span>Choose Avatar</span>
+                    <span class="font-Lexend">Choose Avatar</span>
                     <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
                 </label>
     
-                <input class="focus:ring-2 focus:ring-themecolor" type="text" name="username" id="username" onchange="username()" placeholder="Username">
+                <input class="font-Lexend text-accentcolor focus:ring-2 focus:ring-themecolor" type="text" name="username" id="username" onchange="username()" placeholder="Username">
 
                 
             </div>
@@ -121,47 +120,47 @@
             <div class="row">
                 <label for="roleColor" class="roleColor">
                     <input type="color" id="roleColor" name="roleColor" value="#FF4E61">
-                    <span class="text-black">Role Color</span>
+                    <span class="font-Lexend text-black">Role Color</span>
                 </label>
     
                 <label class="toggle">
-                    <span class="toggle-label">Dark</span>
+                    <span class="toggle-label font-Lexend">Dark</span>
                     <input class="toggle-checkbox" onchange="toggleMode()" type="checkbox">
                     <div class="toggle-switch"></div>
-                    <span class="toggle-label">Light</span>
+                    <span class="toggle-label font-Lexend ">Light</span>
                 </label>
             </div>
             
 
         </div>
 
-    </header>
+      </header>
 
-    <main class="wrapper">
+    <main class="wrapper font-Lexend">
         
 
-        <div class="prvContainer">
+        <div class="prvContainer md:mt-0 sm:-mt-10">
 
             <div id="preview" class="prvMessage dark">
 
                 <div class="messages">
-                    <div class="avatar"><img src="assets/avatar1.png" /></div>
+                    <div class="avatar point"><img src="assets/avatar1.png" /></div>
                     <div class="content">
-                        <h2 class="username" style="color: var(--color-fuchsia)">Emily <span>Today at 4:44</span></h2>
+                        <h2 class="username font-Lexend" style="color: var(--color-fuchsia)">Emily <span>Today at 4:44</span></h2>
                         <div class="message">
-                            <p class="messageText">This tool is cool!</p>
+                            <p class="messageText font-Lexend">This tool is cool!</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="messages">
-                    <div class="avatar"><img id="output" src="https://cdn.discordapp.com/embed/avatars/0.png" /></div>
+                    <div class="avatar rounded-full"><img id="output" src="assets/avatar-main.png" /></div>
                     <div class="content">
-                        <h2 class="roleColorText text-themecolor">
+                        <h2 class="roleColorText text-themecolor font-Lexend">
                             <username id="roleColorText">Your Username</username><span>Today at 4:44</span>
                         </h2>
-                        <div class="message">
-                            <p class="messageText" contenteditable>Right? You can even edit your message.</p>
+                        <div id="max" class="message">
+                            <p class="messageText font-Lexend" contenteditable>Right? You can even edit your message.</p>
                         </div>
                     </div>
                 </div>
@@ -169,9 +168,9 @@
                 <div class="messages">
                     <div class="avatar"><img src="assets/avatar2.png" /></div>
                     <div class="content">
-                        <h2 class="username" style="color: var(--color-yellow)">Algernon <span>Today at 4:44</span></h2>
+                        <h2 class="username font-Lexend" style="color: var(--color-yellow)">Algernon <span>Today at 4:44</span></h2>
                         <div class="message">
-                            <p class="messageText">This is useful.</p>
+                            <p class="messageText font-Lexend">This is useful.</p>
                         </div>
                     </div>
                 </div>
@@ -181,24 +180,24 @@
 
             <div id="preview2" class="prvRole dark">
 
-                <h1 class="roleName">Members ━ 1,156</h1>
+                <h1 class="roleName font-Lexend">Members ━ 1,156</h1>
 
                 <div class="user">
                     <div class="avatar"><img id="output2" src="assets/avatar1.png" /></div>
                     <div class="content">
-                        <h2 id="roleColorText2" class="roleColorText">Emily</h2>
+                        <h2 id="roleColorText2" class="roleColorText text-themecolor font-Lexend">Emily</h2>
                         <div class="status">
-                            <p class="statusText">Cold hearted ~</p>
+                            <p class="statusText font-Lexend">Cold hearted ~</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="user">
-                    <div class="avatar"><img id="output3" src="https://cdn.discordapp.com/embed/avatars/0.png" /></div>
+                    <div class="pointer-events-none avatar"><img class="" id="output3" src="assets/avatar-main.png" /></div>
                     <div class="content">
-                        <h2 id="roleColorText3" class="roleColorText">Your Username</h2>
-                        <div class="status">
-                            <p class="statusText" contenteditable>Click to edit</p>
+                        <h2 id="roleColorText3" class="roleColorText text-themecolor font-Lexend">Your Username</h2>
+                        <div id="max2" class="status">
+                            <p class="statusText font-Lexend" contenteditable>Click to edit</p>
                         </div>
                     </div>
                 </div>
@@ -206,9 +205,9 @@
                 <div class="user">
                     <div class="avatar"><img id="output4" src="assets/avatar2.png" /></div>
                     <div class="content">
-                        <h2 id="roleColorText4" class="roleColorText">Algernon</h2>
+                        <h2 id="roleColorText4" class="roleColorText text-themecolor font-Lexend">Algernon</h2>
                         <div class="status">
-                            <p class="statusText">Cats make me go 🔥</p>
+                            <p class="statusText font-Lexend">Cats make me go 🔥</p>
                         </div>
                     </div>
                 </div>
@@ -219,7 +218,7 @@
 
     </main>
 
-    <footer class="md:bottom-0 md:w-full lg:absolute">
+    <footer class="md:bottom-0 md:w-full font-Lexend">
       <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div class="-mt-6">
