@@ -8,27 +8,25 @@
 }
 
 :root {
-    --color-theme: #FF4E61;
-    ;
+    --color-blurple: #5865F2;
     --color-green: #57F287;
     --color-yellow: #FEE75C;
     --color-fuchsia: #EB459E;
-    --color-red: #ED4245;
+    --color-red: #FF4E61;
     --color-white: #fff;
-    --color-bg: #1C1B29;
-    ;
+    --color-bg: #2c2f33;
     --color-gray: #bfc1c3;
 }
 
 body {
     height: 100vh;
-    background-color: var(--color-white);
+  
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background-color: var(--color-bg);
+    background-color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
