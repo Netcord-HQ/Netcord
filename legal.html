@@ -1,9 +1,55 @@
 <!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
 <head>
-    <link rel="stylesheet" href="/dist/output.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLNCP5NRKD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QLNCP5NRKD');
+  </script>
+
+
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/dist/scrollbar.css" rel="stylesheet">
+    <script src="/htmlredirect.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="svgs/Netcord_Agency_Rounded.png" />
+    <title>Contact Form Received!</title>
+    
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/2CwwusHv8ax3aOzl/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					window.location.href = "https://netcord.in/success";
+				},
+				error: function(){
+					alert("There was an error in submitting the form, if this issue persists please contact the staff team by joining our discord server")
+				}
+			});
+		}
+	</script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300&family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+
+
 </head>
 
-<body>
+<body class="font-Lexend">
+
     <nav class="bg-[#fffffff5] dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" class="flex items-center">
@@ -11,42 +57,73 @@
             
         </a>
         <div class="flex md:order-2">
-            <a href="https://discord.gg/TABfDRrkMA" target="_blank" class="text-white bg-accentcolor hover:bg-[#000] focus:ring-themecolor focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:text-themecolor dark:hover:text-themecolor dark:focus:ring-themecolor">Join Discord</a>
+          <a href="https://discord.gg/TABfDRrkMA" target="_blank" class="text-white bg-accentcolor hover:bg-[#000] focus:ring-themecolor focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:text-themecolor dark:hover:text-themecolor dark:focus:ring-themecolor">Join Discord</a>
             <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
             </button>
         </div>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="/" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor 0 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
+              <a href="/" class="block py-2 pl-3 pr-4 text-accentcolor rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
             </li>
             <li>
-              <a href="/about" class="block py-2 pl-3 pr-4 text-themecolor rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor transition delay-1000 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              <a href="about" class="block py-2 pl-3 pr-4 text-accentcolor rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
             </li>
             <li>
-              <a href="/services" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor 0 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+              <a href="services" class="block py-2 pl-3 pr-4 text-accentcolor rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor md:p-0 md:light:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
             </li>
             
             <li>
-              <a href="/tools" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor 0 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Tools</a>
+              <a href="tools" class="block py-2 pl-3 pr-4 text-accentcolor rounded hover:bg-gray-100 md:hover:bg-transparent md:text-accentcolor md:p-0 md:hover:text-themecolor" aria-current="page">Tools</a>
             </li>
             <li>
-              <a href="/blog" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor 0 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Blog</a>
+              <a href="/blog" class="block py-2 pl-3 pr-4 text-accentcolor rounded hover:bg-gray-100 md:hover:bg-transparent md:text-accentcolor md:p-0 md:hover:text-themecolor" aria-current="page">Blog</a>
             </li>
     
             <li>
               
-              <a href="/contact" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor 0 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+              <a href="contact" class="block py-2 pl-3 pr-4 text-themecolor rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-themecolor 0 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
             </li>
           </ul>
         </div>
         </div>
       </nav>
 
+      <main class="">
 
-
+       
+        <div class="flex justify-center items-center mt-32">
+            
+            <div class="md:-mt-4">
+                <h1 class="text-3xl font-extrabold pb-6 mt-24 text-accentcolor">Legal</h1>
+              <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700 ">
+                
+                <div class="flex flex-col pb-5">
+                    <a href="/legal/terms.html"><dd class="text-2xl font-normal text-themecolor hover:underline">Terms and Conditions </dd></a> 
+                </div>
+                <div class="flex flex-col py-5">
+                   
+                    <a href="/legal/privacy.html"><dd class="text-2xl font-normal text-themecolor hover:underline">Privacy Policy   </dd></a>
+                </div>
+                <div class="flex flex-col py-5">
+                    
+                    <a href="legal.html">  <dd class="text-2xl font-normal text-themecolor hover:underline">Service Level Agreement (SLA)   </dd></a>
+                </div>
+                <div class="flex flex-col py-5">
+                    
+                    <a href="legal.html"> <dd class="text-2xl font-normal text-themecolor hover:underline">Partnership Agreement   </dd> </a>
+                </div>
+                <div class="flex flex-col py-5">
+                    
+                    <a href="legal.html"> <dd class="text-2xl font-normal text-themecolor hover:underline">Licensing Agreement  </dd></a>
+                </div>
+        
+            </dl>
+        </div>   
+        </div>
+        </main>
 
       <footer class="md:bottom-0 md:w-full lg:absolute">
         <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
@@ -122,5 +199,6 @@
         </div>
       </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-
 </body>
+
+
