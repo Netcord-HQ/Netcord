@@ -11,8 +11,8 @@ module.exports = {
       discord: '#2f3136',
     },
 
-
-   
+    darkMode: 'class',
+    darkMode: 'media',
     screens: {
       'sl': '320px',
 
